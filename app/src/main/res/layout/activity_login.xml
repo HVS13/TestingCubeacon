@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/icon_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/icon_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Cubeacon Nyoba-nyoba"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/icon_tagline"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="80dp"
+        android:paddingStart="80dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#b7b7b7"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/email"
+            android:layout_marginTop="5dp"
+            android:background="#b7b7b7"
+            android:hint="pass"
+            android:inputType="textPassword"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/pass"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Login"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/lupaPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Lupa password?"
+            android:textSize="12sp"
+            android:textColor="#348eb1" />
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/lupaPass"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
